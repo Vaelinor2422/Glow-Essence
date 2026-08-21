@@ -44,7 +44,7 @@ export function Navbar() {
           </button>
 
           {/* Desktop nav */}
-          <nav className="hidden items-center gap-9 lg:flex">
+          <nav className="hidden items-center gap-9 lg:flex lg:ml-auto lg:mr-auto">
             {navItems.map((item) => (
               <button
                 key={item.label}
@@ -63,7 +63,7 @@ export function Navbar() {
                   (item.label === 'Blog' && activeName === 'blog')) && (
                   <motion.span
                     layoutId="nav-underline"
-                    className="absolute -bottom-2 left-1/2 h-[3px] w-5 -translate-x-1/2 rounded-full bg-gradient-to-r from-brand-pink to-brand-accent"
+                    className="absolute bottom-0 left-0 right-0 mx-auto h-[3px] w-5 rounded-full bg-gradient-to-r from-brand-pink to-brand-accent"
                   />
                 )}
               </button>
