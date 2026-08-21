@@ -12,7 +12,7 @@ export function Hero() {
         <div className="pointer-events-none absolute -left-16 top-10 h-56 w-56 rounded-full bg-brand-cyan/40 blur-3xl" />
         <div className="pointer-events-none absolute bottom-0 right-1/3 h-40 w-40 rounded-full bg-brand-softPink/70 blur-3xl" />
 
-        <div className="relative grid grid-cols-1 items-center gap-6 px-6 py-8 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8 lg:px-10 lg:py-10">
+        <div className="relative grid grid-cols-1 items-center gap-6 px-6 py-8 sm:px-8 lg:grid-cols-[1fr_1fr] lg:gap-4 lg:px-8 lg:py-10">
           {/* Copy */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -60,9 +60,9 @@ export function Hero() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="relative flex justify-center lg:justify-end"
+            className="relative"
           >
-            <div className="relative aspect-[4/5] w-full max-w-[420px] overflow-hidden rounded-[2rem] shadow-card sm:aspect-[5/5] lg:aspect-[3.5/5]">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] shadow-card lg:aspect-[4/5]">
               <img
                 src="https://images.pexels.com/photos/9774868/pexels-photo-9774868.jpeg?auto=compress&cs=tinysrgb&h=900&w=720"
                 alt="Model with skincare products"
