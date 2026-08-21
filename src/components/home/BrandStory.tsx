@@ -10,7 +10,7 @@ export function BrandStory() {
       <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-lightPink via-brand-softPink/50 to-brand-lightPink">
         <div className="pointer-events-none absolute -right-10 top-10 h-56 w-56 rounded-full bg-brand-cyan/30 blur-3xl" />
 
-        <div className="relative grid grid-cols-1 items-center gap-8 px-6 py-8 sm:px-8 lg:grid-cols-2 lg:gap-10 lg:px-12 lg:py-12">
+        <div className="relative grid grid-cols-1 items-center gap-8 px-6 py-8 sm:px-8 lg:grid-cols-[1fr_0.85fr] lg:gap-10 lg:px-10 lg:py-10">
           {/* Copy */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -49,9 +49,9 @@ export function BrandStory() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="relative"
+            className="relative flex justify-center lg:justify-end"
           >
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-card">
+            <div className="relative aspect-[4/5] w-full max-w-[380px] overflow-hidden rounded-[2rem] shadow-card">
               <img
                 src="https://images.pexels.com/photos/9774785/pexels-photo-9774785.jpeg?auto=compress&cs=tinysrgb&h=900&w=720"
                 alt="Brand story model"
