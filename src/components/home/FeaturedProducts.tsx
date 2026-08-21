@@ -8,7 +8,7 @@ export function FeaturedProducts() {
   const { navigate } = useRouter();
 
   return (
-    <section className="container-page mt-20 lg:mt-28">
+    <section className="container-page mt-12 lg:mt-16">
       <div className="flex flex-col items-center text-center">
         <motion.span
           initial={{ opacity: 0, y: 12 }}
@@ -32,13 +32,13 @@ export function FeaturedProducts() {
         </p>
       </div>
 
-      <div className="mt-12 grid grid-cols-2 gap-x-5 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
+      <div className="mt-8 grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
         {featuredProducts.map((product, i) => (
           <ProductCard key={product.id} product={product} index={i} />
         ))}
       </div>
 
-      <div className="mt-14 flex justify-center">
+      <div className="mt-10 flex justify-center">
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}

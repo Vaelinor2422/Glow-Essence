@@ -6,11 +6,11 @@ export function BrandStory() {
   const { navigate } = useRouter();
 
   return (
-    <section className="container-page mt-20 lg:mt-28">
-      <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-brand-lightPink via-brand-softPink/50 to-brand-lightPink">
+    <section className="container-page mt-12 lg:mt-16 mb-12 lg:mb-16">
+      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-lightPink via-brand-softPink/50 to-brand-lightPink">
         <div className="pointer-events-none absolute -right-10 top-10 h-56 w-56 rounded-full bg-brand-cyan/30 blur-3xl" />
 
-        <div className="relative grid grid-cols-1 items-center gap-10 px-6 py-12 sm:px-10 lg:grid-cols-2 lg:gap-16 lg:px-16 lg:py-20">
+        <div className="relative grid grid-cols-1 items-center gap-8 px-6 py-8 sm:px-8 lg:grid-cols-2 lg:gap-10 lg:px-12 lg:py-12">
           {/* Copy */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}

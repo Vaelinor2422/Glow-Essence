@@ -6,13 +6,13 @@ export function Hero() {
   const { navigate } = useRouter();
 
   return (
-    <section className="container-page pt-8 lg:pt-10">
-      <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-brand-lightPink via-brand-softPink/60 to-brand-lightPink">
+    <section className="container-page pt-4 lg:pt-6">
+      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-lightPink via-brand-softPink/60 to-brand-lightPink">
         {/* Decorative blobs */}
         <div className="pointer-events-none absolute -left-16 top-10 h-56 w-56 rounded-full bg-brand-cyan/40 blur-3xl" />
         <div className="pointer-events-none absolute bottom-0 right-1/3 h-40 w-40 rounded-full bg-brand-softPink/70 blur-3xl" />
 
-        <div className="relative grid grid-cols-1 items-center gap-8 px-6 py-12 sm:px-10 lg:grid-cols-[1.05fr_1fr] lg:gap-4 lg:px-16 lg:py-20">
+        <div className="relative grid grid-cols-1 items-center gap-6 px-6 py-8 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-6 lg:px-12 lg:py-12">
           {/* Copy */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -25,17 +25,17 @@ export function Hero() {
               Special Collaboration!
             </span>
 
-            <h1 className="mt-5 font-serif text-[2.6rem] leading-[1.08] tracking-tight text-brand-ink sm:text-5xl lg:text-[3.6rem]">
+            <h1 className="mt-4 font-serif text-[2.4rem] leading-[1.1] tracking-tight text-brand-ink sm:text-4xl lg:text-[3.2rem]">
               <span className="font-medium">Elegant Makeup</span>
               <br />
               <span className="font-bold">For Every Moment</span>
             </h1>
 
-            <p className="mt-5 max-w-md text-sm leading-relaxed text-brand-stone sm:text-[15px]">
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-brand-stone sm:text-[15px]">
               Experience the power of advanced skincare technology formulated to hydrate, repair, and rejuvenate your skin for a visibly smoother, healthier, and more radiant complexion.
             </p>
 
-            <div className="mt-7 flex flex-wrap items-center gap-3">
+            <div className="mt-5 flex flex-wrap items-center gap-3">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}

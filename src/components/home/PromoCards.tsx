@@ -6,7 +6,7 @@ export function PromoCards() {
   const { navigate } = useRouter();
 
   return (
-    <section className="container-page mt-10 lg:mt-14">
+    <section className="container-page mt-6 lg:mt-8">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {/* Card 1 — cyan */}
         <motion.div

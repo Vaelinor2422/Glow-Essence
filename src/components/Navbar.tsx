@@ -34,7 +34,7 @@ export function Navbar() {
   return (
     <>
       <header className="sticky top-0 z-40 border-b border-brand-lightPink bg-white/90 backdrop-blur-md">
-        <div className="container-page flex h-[72px] items-center justify-between gap-4">
+        <div className="container-page flex h-16 items-center justify-between gap-4">
           {/* Logo */}
           <button onClick={() => navigate({ name: 'home' })} className="flex items-center gap-2.5">
             <Logo />
